@@ -173,7 +173,8 @@ main {
 
 .welcome-message {
     grid-area: left;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 0.8em;
 }
 
 /* For Smaller Screens */
@@ -190,14 +191,14 @@ main {
         min-width: 150px;
     }
     .welcome-message {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 }
 
     /* Galaxy Fold */
 @media (max-width: 300px) {
     .welcome-message {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -205,6 +206,14 @@ main {
 
 @media (min-width: 560px) and (max-width: 1000px) {
     .welcome-message {
+        text-align: center;
+    }
+}
+
+/* For Bigger Screens */
+
+@media (min-width: 1842px) {
+    h1 {
         text-align: center;
     }
 }
