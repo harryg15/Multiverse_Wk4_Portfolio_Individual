@@ -1,3 +1,5 @@
+// Bodymovin Animation Settings //
+
 let home = bodymovin.loadAnimation({
     container: document.getElementById('home'),
     path: "assets/home.json",
@@ -31,6 +33,8 @@ let portfolio = bodymovin.loadAnimation({
     autoplay: false,
     name: "portfolio"
 })
+
+// Mouse Hover Animation For Navbar //
 
 const homeTag = document.getElementById('home')
 homeTag.addEventListener('mouseenter', () => {
@@ -71,4 +75,23 @@ portfolioTag.addEventListener('mouseleave', () => {
         portfolio.stop()
     }, 2000)
 } )
+
+// Home, About Me, Experience, Portfolio Hero Images  //
+
+let coding = bodymovin.loadAnimation({
+    container: document.getElementById('coding'),
+    path: "assets/coding.json",
+    render: "svg",
+    loop: true,
+    autoplay: true,
+    name: "coding"
+})
+let working = bodymovin.loadAnimation({
+    container: document.getElementById('working'),
+    path: "assets/working.json",
+    render: "svg",
+    loop: true,
+    autoplay: true,
+    name: "working"
+})
 

@@ -49,32 +49,33 @@ body {
     display: none;
 }
 
+/* Adjusting SVG Image Sizing */
 #home {
     display: block;
+    position: relative;
     height: 90px;
     width: 90px;
-    position: relative;
     left: 6%;
 }
 #bio {
     display: block;
+    position: relative;
     height: 90px;
     width: 90px;
-    position: relative;
     left: 6%;
 }
 #cv {
     display: block;
+    position: relative;
     height: 90px;
     width: 90px;
-    position: relative;
     left: 6%;
 }
 #portfolio {
     display: block;
+    position: relative;
     height: 90px;
     width: 90px;
-    position: relative;
     left: 6%;
 }
 
@@ -87,9 +88,9 @@ body {
         z-index: 1000;
         inset: 0 0 0 30%;
         flex-direction: column;
-        padding: min(30vh, 10rem) 2rem;
+        padding: min(10vh, 10rem) 2rem;
         background-color: hsla(0, 0%, 100%, 0.1);
-        backdrop-filter: blur(0.3em);
+        backdrop-filter: blur(1.5rem);
         text-align: left;
 
         transform: translateX(100%);
@@ -100,9 +101,7 @@ body {
         transform: translateX(0%);
     }
 
-
-
-    .hamburger-toggle {
+    .hamburger-toggle { /* The Icon Itself */
         display: block;
         position: absolute;
         z-index: 9999;
@@ -110,7 +109,7 @@ body {
         background-repeat: no-repeat;
         width: 2rem;
         border: 0;
-        aspect-ratio: 1; /* makiing height and width the same*/
+        aspect-ratio: 1; /* making height and width the same */
         top: 2rem;
         right: 2rem;
     }
@@ -133,32 +132,105 @@ body {
     }
 }
 
+@media (max-width: 400px) {
+    #home {
+        left: -10%;
+    }
+}
+@media (max-width: 300px) {
+    #home {
+        left: -13%;
+    }
+}
+
 /******************/
-/* Home Into Page */
+/* Home Hero Page */
 /******************/
 
 main {
     position: relative;
-    top: 30%;
+    top: 10%;
     margin: auto;
     width: 70%;
     max-width: 1700px;
-    border: solid 2px blue;
 }
 
 .content-box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "left right right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
     color: white;
-    font-family: 'Bungee', cursive;
+    margin: auto;
+    max-width: 1300px;
 }
 
-.welcome-left {
-    grid-area: left;
-}
-
-.welcome-right {
+.hero-image {
     grid-area: right;
-    text-align: center;
+    margin: auto;
+    max-width: 500px;
+    min-width: 300px;
 }
+
+.welcome-message {
+    grid-area: left;
+    font-size: 2rem;
+}
+
+/* For Smaller Screens */
+
+@media (max-width: 1000px) {
+    .content-box {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "left" 
+        "right";
+    }
+    /* Allows Image To Shrink Even Further */
+    .hero-image {
+        min-width: 150px;
+    }
+    .welcome-message {
+        font-size: 1.3rem;
+    }
+}
+
+    /* Galaxy Fold */
+@media (max-width: 300px) {
+    .welcome-message {
+        font-size: 1.1rem;
+    }
+}
+
+/* For Tablets */
+
+@media (min-width: 560px) and (max-width: 1000px) {
+    .welcome-message {
+        text-align: center;
+    }
+}
+
+
+/*****************/
+/* About Me Page */
+/*****************/
+
+.bio-message {
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+
+/* For Smaller Screens */
+
+@media (max-width: 1230px) {
+    .bio-message {
+        font-size: 1.1em;
+    }
+}
+@media (max-height: 720px) {
+    .bio-message {
+        font-size: 0.9em;
+    }
+    .bio-image {
+        display: none;
+    }
+} 
