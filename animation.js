@@ -1,4 +1,4 @@
-// Bodymovin Animation Settings //
+// Bodymovin Initial Animation Settings //
 
 let home = bodymovin.loadAnimation({
     container: document.getElementById('home'),
