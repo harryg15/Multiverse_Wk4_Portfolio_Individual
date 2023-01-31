@@ -50,6 +50,7 @@ body {
 }
 
 /* Adjusting SVG Image Sizing */
+
 #home {
     display: block;
     position: relative;
@@ -78,6 +79,8 @@ body {
     width: 90px;
     left: 6%;
 }
+
+/* Hamburger Menu */
 
 @media (max-width: 35em) {
     .flex {
@@ -213,7 +216,7 @@ main {
 /* For Bigger Screens */
 
 @media (min-width: 1842px) {
-    h1 {
+    .welcome-message h1 {
         text-align: center;
     }
 }
