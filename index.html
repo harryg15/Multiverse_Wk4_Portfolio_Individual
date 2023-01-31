@@ -5,9 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <script defer src="nav.js"></script>
+    <script defer src="animation.js"></script>
     <title>Harrison Grant</title>
 </head>
 <body>
+    <button class="hamburger-toggle" aria-controls="navbar-links" aria-expanded="false">
+        <span class="sr-only"></span></button>
+    <nav>
+        <ul id="navbar-links" data-visible="false" class="navbar-links flex">
+            <li class="active">
+                <a href="index.html">
+                    <span aria-hidden="true" id="home"></span>Home
+                </a>
+            </li>
+            <li class="active">
+                <a href="bio.html">
+                    <span aria-hidden="true" id="bio"></span>About Me
+                </a>
+            </li>
+            <li class="active">
+                <a href="experience.html">
+                    <span aria-hidden="true" id="cv"></span>Experience
+                </a>
+            </li>
+            <li class="active">
+                <a href="portfolio.html">
+                    <span aria-hidden="true" id="portfolio"></span>Portfolio
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content-box">
+            <div class="welcome-left"><h1>Hi There!</h1></div>
+            <div class="welcome-right"></div>
+        </div>
+    </main>
     
 </body>
 </html>
