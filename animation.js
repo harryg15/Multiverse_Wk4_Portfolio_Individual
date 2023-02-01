@@ -1,4 +1,4 @@
-// Bodymovin Initial Animation Settings //
+// Bodymovin Initial Animation Settings (For Navbar) //
 
 let home = bodymovin.loadAnimation({
     container: document.getElementById('home'),
@@ -34,7 +34,7 @@ let portfolio = bodymovin.loadAnimation({
     name: "portfolio"
 })
 
-// Mouse Hover Animation For Navbar //
+// Mouse Hover Animation (For Navbar) //
 
 const homeTag = document.getElementById('home')
 homeTag.addEventListener('mouseenter', () => {
@@ -76,7 +76,7 @@ portfolioTag.addEventListener('mouseleave', () => {
     }, 2000)
 } )
 
-// Home, About Me, Experience, Portfolio Hero Images  //
+// Home, About Me, Experience & Portfolio Hero Images  //
 
 let coding = bodymovin.loadAnimation({
     container: document.getElementById('coding'),
