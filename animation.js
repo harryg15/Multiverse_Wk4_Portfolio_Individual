@@ -94,4 +94,12 @@ let working = bodymovin.loadAnimation({
     autoplay: true,
     name: "working"
 })
+let socialMedia = bodymovin.loadAnimation({
+    container: document.getElementById('social-media'),
+    path: "assets/social-media.json",
+    render: "svg",
+    loop: true,
+    autoplay: true,
+    name: "social-media"
+})
 
