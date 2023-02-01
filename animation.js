@@ -86,6 +86,16 @@ let coding = bodymovin.loadAnimation({
     autoplay: true,
     name: "coding"
 })
+
+let socialMedia = bodymovin.loadAnimation({
+    container: document.getElementById('social-media'),
+    path: "assets/social-media.json",
+    render: "svg",
+    loop: true,
+    autoplay: true,
+    name: "social-media"
+})
+
 let working = bodymovin.loadAnimation({
     container: document.getElementById('working'),
     path: "assets/working.json",
@@ -94,12 +104,12 @@ let working = bodymovin.loadAnimation({
     autoplay: true,
     name: "working"
 })
-let socialMedia = bodymovin.loadAnimation({
-    container: document.getElementById('social-media'),
-    path: "assets/social-media.json",
+let project = bodymovin.loadAnimation({
+    container: document.getElementById('project'),
+    path: "assets/portfolio.json",
     render: "svg",
     loop: true,
     autoplay: true,
-    name: "social-media"
+    name: "project"
 })
 

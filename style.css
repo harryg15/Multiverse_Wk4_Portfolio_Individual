@@ -14,6 +14,7 @@ body {
     font-weight: 800;
     background: linear-gradient(#345aa4 -28.35%, rgba(63, 0, 156, 0) 153.96%);
     height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -167,7 +168,7 @@ main {
 .hero-image {
     grid-area: right;
     margin: auto;
-    max-width: 500px;
+    max-width: 450px;
     min-width: 300px;
 }
 
@@ -219,9 +220,9 @@ main {
 }
 
 
-/*****************/
-/* About Me Page */
-/*****************/
+/******************************/
+/* About Me & Experience Page */
+/******************************/
 
 .bio-message {
     font-size: 1.5em;
@@ -235,7 +236,7 @@ main {
         font-size: 1.1em;
     }
 }
-@media (max-height: 720px) {
+@media (max-height: 870px) {
     .bio-message {
         font-size: 0.9em;
     }
@@ -243,3 +244,45 @@ main {
         display: none;
     }
 } 
+
+
+/**********/
+/* Footer */
+/**********/
+
+.sticky-footer {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 92%;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0px;
+    gap: 1.5em;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* For Smaller Screens */
+
+@media (max-width: 400px) {    
+    .sticky-footer {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 320px) {    
+    .sticky-footer {
+        font-size: 0.65em;
+    }
+}
+@media (max-height: 715px) {    
+    .sticky-footer {
+        display: none;
+    }
+}
