@@ -178,6 +178,15 @@ main {
     line-height: 0.8em;
 }
 
+.welcome-message > * {
+    transition: all .2s ease-in-out;
+}
+
+.welcome-message > *:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /* For Smaller Screens */
 
 @media (max-width: 1000px) {
@@ -228,6 +237,12 @@ main {
     font-size: 1.5em;
     line-height: 1.3em;
 }
+.bio-message p {
+    transition: all .2s ease-in-out;
+}
+.bio-message p:hover {
+    transform: scale(1.05);
+}
 
 /* For Smaller Screens */
 
@@ -261,7 +276,15 @@ main {
     list-style: none;
     display: flex;
     padding-inline-start: 0px;
-    gap: 1.5em;
+    gap: 1.5em; 
+}
+
+.footer-links li {
+    transition: all .2s ease-in-out;
+}
+
+.footer-links li:hover {
+    transform: scale(1.1);
 }
 
 .footer-links a {
