@@ -56,14 +56,12 @@ body {
     position: relative;
     height: 90px;
     width: 90px;
-    left: 6%;
 }
 #bio {
     display: block;
     position: relative;
     height: 90px;
     width: 90px;
-    left: 6%;
 }
 #cv {
     display: block;
@@ -77,7 +75,6 @@ body {
     position: relative;
     height: 90px;
     width: 90px;
-    left: 6%;
 }
 
 /* Hamburger Menu */
